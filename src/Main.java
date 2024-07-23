@@ -60,9 +60,9 @@ public class Main {
         var totalWorkers = totalTime / laborDay;
         System.out.println("Всего работников в компании - " + totalWorkers + " человек.");
         var replenishment = 94;
-        var becameWorkers = totalWorkers + replenishment;
-        var needTime = becameWorkers * laborDay;
-        System.out.println("Если в компании работает " + becameWorkers + " человек, то всего " + needTime + " часов работы может быть поделено между сотрудниками.");
+        totalWorkers = totalWorkers + replenishment;
+        var needTime = totalWorkers * laborDay;
+        System.out.println("Если в компании работает " + totalWorkers + " человек, то всего " + needTime + " часов работы может быть поделено между сотрудниками.");
 
     }
 }
